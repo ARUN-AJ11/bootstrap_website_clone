@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammy's Mindchirps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="mindchirps.css">
+</head>
+<body>
+    <!--This is navbar-->
+    <div class="mindchirps-nav" id="heading" >
+        <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #1e525b;">
+            <img class="smiley" src="https://www.mindchirps.com/image/1598179803.PNG" alt="Sammy's MindChirps" ; >
+            <a class="navbar-brand titlename " >Sammy's MindChirps</a> 
+            <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbartoggler" aria-controls="navbartoggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse show" id="navbartoggler">
+                <ul class="navbar-nav mr-auto "></ul>
+                <ul class="navbar-nav mr-right  d-lg-none">
+                    <div id="accordion">
+                        <div class="card mt-4 categoriescard" id="navtogglecard">
+                            
+                            <button type="button" class="btn btn-link text-muted " style=" color: #736e6edb; font-weight: bold; text-decoration: none; margin-right: 50%; " 
+                            data-bs-toggle="collapse" href="#sublink1"><i class="fa fa-play"></i> Book Reviews </button>
+                            <div id="sublink1" class="collapse show"data-bs-parent="#accordion">
+                                <ul class="mb-1 tick" style="list-style-type: none;  color: #736e6edb; font-weight: bold;">
+                                    <li>Self help</li>
+                                    <li>Psychology</li>
+                                    <li>Drama</li>
+                                    <li>Science</li>
+                                    <li>Non-fiction</li>
+                                    <li>Technology</li>
+    
+                                </ul>
+                            </div>
+    
+                            <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;"  data-bs-toggle="collapse" href="#sublink2"><i class="fa fa-play"></i> Movie Reviews</button>
+                            <div id="sublink2" class="collapse "data-bs-parent="#accordion">
+                                <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                    <li><a>Drama</a></li>
+                                    <li>Romantic Thriller</li>
+                                    <li>Crime Thriller</li>
+                                    <li>Romance</li>
+                                    <li>Science</li>
+                                    <li>Biopic</li>
+                                </ul>
+                            </div>
+    
+                            <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink3">
+                            <i class="fa fa-play"></i>My Experiences</button>
+                            <div id="sublink3"class="collapse "data-bs-parent="#accordion">
+                                <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                    <li>Self Help</li>
+                                   
+                                </ul>
+                            </div>
+    
+                            <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink4"><i class="fa fa-play"></i> Book Reviews</button>
+                            <div id="sublink4"class="collapse "data-bs-parent="#accordion">
+                                <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                    <li>Animals</li>
+                                   
+                                </ul>
+                            </div>
+    
+                            <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink5"><i class="fa fa-play"></i> Book Reviews</button>
+                            <div id="sublink5"class="collapse "data-bs-parent="#accordion">
+                                <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                    <li>Romance</li>
+                                   
+                                </ul>
+                            </div>
+    
+                            <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink6"><i class="fa fa-play"></i> Book Excerpts</button>
+                            <div id="sublink6"class="collapse "data-bs-parent="#accordion">
+                                <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                    <li>Self Help</li>
+                                    <li>Yoga</li>
+                                    <li>Drama</li>
+                                    <li>Non-fiction</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+
+
+        </nav>
+    </div>
+
+    <!--Here goes the content-->
+
+    <div class="container-fluid">
+        <div class="row d-flex">
+
+            <!-- column 1 has no content -->
+            <div class="col col-sm-3 col-lg-3 "></div>    
+
+            <!--column 2 has the brief content in center -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="card mt-4  maincard" style="border-radius: 10px;">
+                    <div class="card-header p-3 titlecard" style="border-radius: 10px 10px 0px 0px;" >Review of the Tamil movie Nitham Oru Vanam by Ra Karthik</div>
+                    <div class="card-body text-justify">
+                        <div class="row justify-content-center">
+                            <div class="col-md-3">
+                                <centre><img class="d-lg-none imgspace" src="https://www.mindchirps.com/images/blog/thumbnail/16689287426379d4e6af198" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/16689287426379d4e6af198" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-md-9 text-justify">
+                                <p>The movie's storyline is very straight forward: How travel
+                                   can change one's outlook about life. Of late, in Kollywood
+                                   cinema, this pattern can be seen where there is a depressed
+                                    person(men, mostly) who would climb on their Royal Enfield 
+                                    bike and then set off to the Himalayan mountains; when they
+                                    return, they become a refined soul. So, is this movie any
+                                    different from the stereotypical portrayal?! Ah, you can't
+                                    get to the verdict right in the first paragraph :D</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer  footerbutton" >
+                        <span class="text-secondary font-italic" >
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card mt-4 maincard"style="border-radius: 10px;">
+                    <div class="card-header p-3 titlecard"style="border-radius: 10px 10px 0px 0px;">Book Review of Row, Row, Row your Boat - 50 Simple Little Things to Navigate the Modern Indian Marriage by Sophia Philips and Roopak Nedumpilly</div>
+                    <div class="card-body text-justify">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <centre><img class="d-lg-none imgspace " src="https://www.mindchirps.com/images/blog/thumbnail/16683439266370e8768b13b" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/16683439266370e8768b13b" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-sm-9 text-justify">
+                                <p>It's a common saying which goes like 'Marriages are made in Heaven';
+                                    but we all know that the couple should still lead their lives on 
+                                    (beautiful yet complicated) Earth!! All of us want and yearn for
+                                    a happy, peaceful, fun filled and satisfying married life and a
+                                    partner who would support, defend, and handhold us in this journey.
+                                    But very rarely do we come across couples who have achieved this stature.
+                                    This book 'Row, Row, Row your Boat' is a book written by couple therapists,
+                                    Sophia and Roopak(a couple themselves!!), who turned around their married
+                                    life which was on the verge of collapse with therapy's help. This is a short
+                                    but insightful read on little things that couples could do 'together' to
+                                    reach their vision of becoming a made-for-each-other couple, which apparently
+                                    was their original vow when they got married but may have fizzled out as years passed by.&nbsp;</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" >
+                        <span class="text-secondary font-italic">
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card mt-4 maincard" style="border-radius: 10px;">
+                    <div class="card-header p-3 titlecard"style="border-radius: 10px 10px 0px 0px;">Book Review of The Moral Compass: Finding Balance and Purpose in an Imperfect World by Hardayal Singh</div>
+                    <div class="card-body text-justify">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <centre><img class="d-lg-none imgspace" src="https://www.mindchirps.com/images/blog/thumbnail/16664907856354a1a150d4c" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/16664907856354a1a150d4c" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-sm-9 text-justify">
+                                <p>Let's assume this situation. You are working in a
+                                    reputed organization and your appraisal is underway.
+                                    You have high hopes of getting a sizeable increment 
+                                    with a promotion to a leadership role. All of a sudden,
+                                    your manager invites you into his room and asks you to 
+                                    poach some information to a competitor firm for some illegal
+                                    commission. Would you be okay doing this so that your appraisal 
+                                    sails through, which will also keep you in your manager's good books
+                                    or would you back off as you would be hurting the organization for illegal
+                                    short term again. This is just an example of one of plethora
+                                    of daily dilemmas that life throws at you with varying complexities.
+                                    This book by Hardayal Singh, a civil service Officer, attempts 
+                                    to highlight through fictional and real stories of common men, that
+                                    choosing and walking along the righteous path with an unwavering mind
+                                    is possible but acknowledges that it is extremely difficult.&nbsp;</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" >
+                        <span class="text-secondary font-italic">
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+
+
+                <div class="card mt-4 maincard"style="border-radius: 10px;">
+                    <div class="card-header p-3 titlecard"style="border-radius: 10px 10px 0px 0px;">Movie Review of Thiruchitrambalam directed by Mithran R. Jawahar</div>
+                    <div class="card-body text-justify">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <centre><img class="d-lg-none imgspace" src="https://www.mindchirps.com/images/blog/thumbnail/1662797958631c48862cd62" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/1662797958631c48862cd62" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-sm-9 text-justify">
+                                <p>A food delivery boy finds his
+                                    true love. Yes, this is the story line of the movie ‘Thiruchitrambalam’
+                                    directed by Mithran R Jawahar. This is a cliched genre, we all know that. But
+                                    what Mithran does differently here is to line up a stellar cast namely Dhanush,
+                                    Nithya Menon, Prakash Raj and Bharathiraja who ensures that the audience
+                                    doesn’t experience a dull moment in the movie.</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" >
+                        <span class="text-secondary font-italic">
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+
+
+                <div class="card mt-4 maincard"style="border-radius: 10px;">
+                    <div class="card-header p-3 titlecard"style="border-radius: 10px 10px 0px 0px;">Book Review of Think like a monk: The secret of how to 
+                    harness the power of positivity and be happy now by Jay Shetty</div>
+                    <div class="card-body text-justify">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <centre><img class="d-lg-none imgspace" src="https://www.mindchirps.com/images/blog/thumbnail/1661686609630b53510a10f" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/1661686609630b53510a10f" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-sm-9 text-justify">
+                                <p>What is the ultimate goal of one's life, beyond earning resources
+                                    to meet basic needs such as food, clothing and shelter? I 
+                                    have pondered over this many a times but couldn't come up
+                                    with any concrete answer. Having heard Jay Shetty speak
+                                    in his Youtube Channel, I had developed high regards for
+                                    his practical solution in dealing with life's day to day problems.
+                                    So when I came across this interesting title with the tagline 'The secret
+                                    of how to harness the power of positivity and be happy now', I picked
+                                    this book with eagerness that it will bring me closer to the answer
+                                    that has been eluding me for long. And after having read and re-read
+                                    this book, I would say that this book lived upto my expectations.</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" >
+                        <span class="text-secondary font-italic">
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="card mt-4 maincard"style="border-radius: 10px;">
+                    <div class="card-header p-3 titlecard"style="border-radius: 10px 10px 0px 0px;">Review of the movie Rocketry: The Nambi Effect (Tamil) by R Madhavan</div>
+                    <div class="card-body text-justify">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <centre><img class="d-lg-none imgspace" src="https://www.mindchirps.com/images/blog/thumbnail/165769010762ce57fb4a3cd" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/165769010762ce57fb4a3cd" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-sm-9 text-justify">
+                                <p>Rocketry:The Nambi Effect is a biopic that portrays 
+                                    the life of Dr. Nambi Narayanan, a research scientist
+                                    at ISRO and how he navigates the controversial case
+                                    alleging his involvement in treachery and how he eventually
+                                    gets acquitted by the Supreme Court. More importantly, it highlights
+                                    the huge loss that India had to undergo commercially and technologically
+                                    because of this unscrupulous and baseless charge levied
+                                    against Dr Nambi who was then spearheading the initiative
+                                    to introduce Cryogenic technology and was on a mission to 
+                                    turn India into a space superpower.</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" >
+                        <span class="text-secondary font-italic">
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card mt-4 maincard"style="border-radius: 10px">
+                    <div class="card-header p-3 titlecard"style="border-radius: 10px 10px 0px 0px;">Review of 777 Charlie directed by Kiranraj</div>
+                    <div class="card-body text-justify">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <centre><img class="d-lg-none imgspace" src="https://www.mindchirps.com/images/blog/thumbnail/165539019562ab3ff3a36b6" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/165539019562ab3ff3a36b6" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-sm-9 text-justify">
+                                <p>Love can change someone’s life
+                                    for better or for worse. This movie demonstrates that this is true not only in
+                                    case where two humans are involved but also in cases where a human and an
+                                    animal bond together. Starring Rakshit Shetty and the dog as the lead artists,
+                                    the movie 777 Charlie unfolds how the world of an introvert protagonist, who
+                                    leads a quiet and mundane life, turns around with the entry of Charlie, the
+                                    dog.</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" >
+                        <span class="text-secondary font-italic">
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="card mt-4 maincard"style="border-radius: 10px">
+                    <div class="card-header p-3 titlecard"style="border-radius: 10px 10px 0px 0px;">Review of the Tamil movie Nitham Oru Vanam by Ra Karthik</div>
+                    <div class="card-body text-justify">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <centre><img class="d-lg-none imgspace" src="https://www.mindchirps.com/images/blog/thumbnail/1652519863627f73b7802aa" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik"></centre>
+                                <img  class="d-none d-lg-block" src="https://www.mindchirps.com/images/blog/thumbnail/1652519863627f73b7802aa" alt="Review of the Tamil movie Nitham Oru Vanam by Ra Karthik">
+                            </div>
+                            <div class="col-sm-9 text-justify">
+                                <p>Dil Dhadakne Do, directed by Zoya Akhthar
+                                    is an honest portrayal of the emotional turmoil
+                                    of the members of a super-rich family, which outbursts
+                                    in various forms as the family goes on a 
+                                    cruise to celebrate the 30</p>
+                                    
+                                    ...
+                                    <strong>[Continue Reading...]</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" >
+                        <span class="text-secondary font-italic">
+                            <small></small>
+                        </span>
+                        <span class="float-end">
+                            <span class="btn btn-secondary btn-sm ">Movie Reviews</span>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- column 3 has side content-->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <div class="card mt-4 newscard"style="border-radius: 10px;">
+                    <h5 class="card-header p-3 newstitle"style="border-radius: 10px 10px 0px 0px;">Newsletter</h5>
+                    <div class="card-body newsbody">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" class="form-control">
+                                <div class="text-center">
+                                    <button class="btn btn-sm m-2 subscribe btn-primary">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-4 aboutcard"style="border-radius: 10px;">
+                    <h5 class="card-header p-3 abouttitle"style="border-radius: 10px 10px 0px 0px;">About Sammy's MindChirps</h5> 
+                    <div class="card-body">
+                        <p> Hello! Welcome to Sammy's MindChirps. I'm glad 
+                            you are here.  To me, the word LIFE is an acronym
+                            of Laboratory with Infinite Freedom to Experiment.
+                            It's more like a kaleidoscope offering amazing learning
+                            opportunities as we grow and explore various facets of life.
+                            So this blog is a platform where I share anything that I find 
+                            interesting (with my two cents, of course :D). I assure that 
+                            you will have some new learning when you exit the blog. And do
+                            share your feeback on the blog or anything you want me to write
+                            about in this blog by dropping an email to mindchirps@gmail.com  </p>
+                    </div>
+                </div>
+
+                <div id="accordion">
+                    <div class="card mt-4 categoriescard" id="navcard">
+                        <h5 class="card-header categoriestitle">Categories</h5>
+                        <button type="button" class="btn btn-link text-muted " style=" color: #736e6edb; font-weight: bold; text-decoration: none; margin-right: 50%; " 
+                        data-bs-toggle="collapse" href="#sublink1"><i class="fa fa-play"></i> Book Reviews </button>
+                        <div id="sublink1" class="collapse show"data-bs-parent="#accordion">
+                            <ul class="mb-1 tick" style="list-style-type: none;  color: #736e6edb; font-weight: bold;">
+                                <li>Self help</li>
+                                <li>Psychology</li>
+                                <li>Drama</li>
+                                <li>Science</li>
+                                <li>Non-fiction</li>
+                                <li>Technology</li>
+
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;"  data-bs-toggle="collapse" href="#sublink2"><i class="fa fa-play"></i> Movie Reviews</button>
+                        <div id="sublink2" class="collapse "data-bs-parent="#accordion">
+                            <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                <li><a>Drama</a></li>
+                                <li>Romantic Thriller</li>
+                                <li>Crime Thriller</li>
+                                <li>Romance</li>
+                                <li>Science</li>
+                                <li>Biopic</li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink3">
+                        <i class="fa fa-play"></i>My Experiences</button>
+                        <div id="sublink3"class="collapse "data-bs-parent="#accordion">
+                            <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                <li>Self Help</li>
+                               
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink4"><i class="fa fa-play"></i> Book Reviews</button>
+                        <div id="sublink4"class="collapse "data-bs-parent="#accordion">
+                            <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                <li>Animals</li>
+                               
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink5"><i class="fa fa-play"></i> Book Reviews</button>
+                        <div id="sublink5"class="collapse "data-bs-parent="#accordion">
+                            <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                <li>Romance</li>
+                               
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn btn-link text-muted font-weight-bold " style="color: #736e6edb; font-weight: bold;text-decoration: none;margin-right: 50%;" data-bs-toggle="collapse" href="#sublink6"><i class="fa fa-play"></i> Book Excerpts</button>
+                        <div id="sublink6"class="collapse "data-bs-parent="#accordion">
+                            <ul class="mb-1 tick" style="list-style-type: none;color: #736e6edb; font-weight: bold;">
+                                <li>Self Help</li>
+                                <li>Yoga</li>
+                                <li>Drama</li>
+                                <li>Non-fiction</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+               <div class="card mt-4 tags">
+                    <div class="card-header tagstitle">Tags</div>
+                        <div class="row">
+                            <ul class="col lefts">
+                                <li><a href="#"><strong> Self-Help Book </strong></a></li>
+                                <li><a href="#"><strong> Crime </strong></a></li>
+                                <li><a href="#"><strong> Web Designing </strong></a></li>
+                                <li><a href="#"><strong> Book Reviews </strong></a></li>
+                                <li><a href="#"><strong> Drama </strong></a></li>
+                                <li><a href="#"><strong> Animals </strong></a></li>
+                            </ul>
+                            <ul class=" col rights">
+                                <li><a href="#"><strong> Non-fiction </strong></a></li>
+                                <li><a href="#"><strong> Science </strong></a></li>
+                                <li><a href="#"><strong> Psychology </strong></a></li>
+                                <li><a href="#"><strong> Romance </strong></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+               </div>
+
+            </div>
+        </div>
+
+        <ul class="pagination mt-4 justify-content-center" style="cursor: pointer;">
+            <li class="page-item "><a class="page-link"><</a></li>
+            <li class="page-item active"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">2</a></li>
+            <li class="page-item"><a class="page-link">3</a></li>
+            <li class="page-item"><a class="page-link">4</a></li>
+            <li class="page-item"><a class="page-link">5</a></li>
+            <li class="page-item"><a class="page-link">></a></li>
+          </ul>
+
+
+    <div class="justify-content-end">
+    <a id="heading" href="#" class="btn btn-warning btn-lg arrowmark " role="button" style="display: inline;"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+    <footer>
+        <div class="footermain">
+            <div class="mt-4">
+                <div class="footericons ">
+                    <ul>          
+                            <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>    
+                    </ul>
+                </div>
+    
+                <div class="footerinfo">
+                    <div class="text-white "><b>© All rights reserved by<a href="#" class="text-white text-decoration-none"> Sammy's MindChirps</a></b></div>
+                    <div class="text-white"><small>Logo Credits: Ms.G.DJanani</small></div>
+                    <div class="text-white"><small>Developed and Hosted by 8Queens</small></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+       
+</body>
+</html>
